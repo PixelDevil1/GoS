@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99CB977D-17B8-47BF-B2B4-946BB94DF866}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NWCorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NECorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SWCorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SECorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NLHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NRHWAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WUHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EUHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WLHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ELHWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NLWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NRWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLWAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRWAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WUWAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EUWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WLWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ELWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NDoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SDoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WDoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EDoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullBattery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToothEnemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeEnemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeEnemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToothEnemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeadBattery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NDoorC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EDoorC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SDoorC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WDoorC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DollEnemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToothEnemyAgitated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Victory.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
